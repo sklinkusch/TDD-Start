@@ -1,22 +1,26 @@
 function sum(a, b) {
-  return a + b
+  return a + b;
 }
 
 function reduceNumbers(arr) {
-  if (arr === undefined) return new Error("Got no parameter...")
+  if (arr === undefined) return new Error("Got no parameter...");
 
   if (arr.length === 1) {
-    return arr[0]
+    return arr[0];
   }
 
-  return arr.reduce((currentSum, number) => currentSum + number, 0)
+  return arr.reduce((currentSum, number) => currentSum + number, 0);
 }
 
 function addGlobalVar(obj) {
-  return Object.assign(window, obj)
+  return Object.assign(window, obj);
 }
 
-module.exports = { sum, reduceNumbers, addGlobalVar }
+function mapArray(array) {
+  return array.map(element => element * 2);
+}
+
+module.exports = { sum, reduceNumbers, addGlobalVar, mapArray };
 
 /*
  * Object.assaign vs spread syntax

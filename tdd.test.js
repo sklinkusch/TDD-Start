@@ -55,4 +55,51 @@ describe("Check a map function", () => {
     expect(mapArray([2, 4, 7])).toEqual([4, 8, 14]);
     expect(mapArray([-6, 0, 1479])).toEqual([-12, 0, 2958]);
   });
+  test("Check if it works with bigger arrays", () => {
+    expect(
+      mapArray([
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ])
+    ).toEqual([
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40
+    ]);
+  });
 });

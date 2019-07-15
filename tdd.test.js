@@ -1,6 +1,6 @@
 const { sum, reduceNumbers, addGlobalVar, mapArray } = require("./tdd");
 
-describe("Tests for sum funtion", () => {
+describe("Tests for sum function", () => {
   test("adds 1 + 2 to equal 3", () => {
     expect(sum(1, 2)).toBe(3);
   });
